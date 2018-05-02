@@ -1,0 +1,165 @@
+#84
+
+fun fn1(bool x, int y, int z) int {
+   bool a;
+   int b;
+   if (y < 10) {
+      if (z < 2) {
+         a = !true;
+      } else {
+         a = !false;
+      }
+   } else {
+      a = !false;
+   }
+   if (a) {
+      a = false;
+      y = 2;
+   } else {
+      a = true;
+      z = 5;
+   }
+   b = y + z;
+   return b * 3;
+}
+
+fun fn2(bool x, int y) int {
+   bool a;
+   if (x) {
+      if (y > 4) {
+         a = true;
+      } else {
+         a = false;
+      }
+   } else {
+      a = false;
+   }
+   if (a) {
+      return fn1(x, y, 7);
+   } else {
+      return fn1(x, 4 * 2 + 4, 5);
+   }
+}
+
+fun main() int {
+   int result;
+   bool a;
+   result = 0;
+   if (2 <= 2) {
+      if (3 != 4) {
+         a = true;
+      } else {
+         a = false;
+      }
+   } else {
+      a = false;
+   }
+   if (a) {
+      if (true) {
+         if (false) {
+            a = false;
+         } else {
+            a = true;
+         }
+      } else {
+         a = false;
+      }
+      a = !a;
+      result = result + fn2(a, 7);
+      # tack on rest
+      if (4 >= 4) {
+         if (8 == 8) {
+            a = true;
+         } else {
+            a = false;
+         }
+      } else {
+         a = false;
+      }
+      if (a) {
+         if (false) {
+            if (true) {
+               a = true;
+            } else {
+               a = false;
+            }
+         } else {
+            a = false;
+         }
+         result = result + fn2(a, 3);
+         return result * 2;
+      } else {
+         # tack on rest
+         if (4 >= 4) {
+            if (8 == 8) {
+               a = true;
+            } else {
+               a = false;
+            }
+         } else {
+            a = false;
+         }
+         if (a) {
+            if (false) {
+               if (true) {
+                  a = true;
+               } else {
+                  a = false;
+               }
+            } else {
+               a = false;
+            }
+            result = result + fn2(a, 3);
+         }
+         return result * 2;
+      }
+   } else {
+      # tack on rest
+      if (4 >= 4) {
+         if (8 == 8) {
+            a = true;
+         } else {
+            a = false;
+         }
+      } else {
+         a = false;
+      }
+      if (a) {
+         if (false) {
+            if (true) {
+               a = true;
+            } else {
+               a = false;
+            }
+         } else {
+            a = false;
+         }
+         result = result + fn2(a, 3);
+         return result * 2;
+      } else {
+         # tack on rest
+         if (4 >= 4) {
+            if (8 == 8) {
+               a = true;
+            } else {
+               a = false;
+            }
+         } else {
+            a = false;
+         }
+         if (a) {
+            if (false) {
+               if (true) {
+                  a = true;
+               } else {
+                  a = false;
+               }
+            } else {
+               a = false;
+            }
+            result = result + fn2(a, 3);
+         }
+         return result * 2;
+      }
+   }
+}

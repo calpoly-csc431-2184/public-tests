@@ -1,0 +1,9 @@
+#39
+fun main () int {
+   int w,x,y, z;
+   x = 3+4;
+   y = x+(4/3);
+   z = -2;
+   w = y-(4*(-2 + z));
+   return x+y+w;
+}

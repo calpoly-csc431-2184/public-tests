@@ -1,0 +1,10 @@
+#8
+fun main () int {
+   fun innerMax (int a, int b) int {
+      if (a > b) {
+         return a;
+      }
+      return b;
+   }
+   return innerMax(7, 8);
+}

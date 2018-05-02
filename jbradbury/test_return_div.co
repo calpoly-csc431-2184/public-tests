@@ -1,0 +1,4 @@
+#3
+fun main() int {
+   return 18 / 5;
+}
