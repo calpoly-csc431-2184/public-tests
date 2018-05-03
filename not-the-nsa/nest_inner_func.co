@@ -1,0 +1,12 @@
+fun main() int {
+   fun x() int {
+      fun y() int {
+         fun z() int {
+            return 1;
+         }
+         return z();
+      }
+      return y();
+   }
+   return x();
+}

@@ -1,0 +1,11 @@
+fun main() int {
+   return f(1);
+}
+
+fun f(int x) int {
+   return g(2, true);
+}
+
+fun g(int x, bool y) int {
+   return 3;
+}
