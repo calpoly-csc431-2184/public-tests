@@ -1,0 +1,46 @@
+fun d (int x, bool y) (int bool int -> bool) {
+    fun z (int y, bool x, int z) bool {
+        if (!!!(y > 15) != x && z < z) {
+            if (x) {
+                return !x;
+            } else {
+                return y == 14;
+            }
+        } else {
+            return y + z < z * -y;
+        }
+    }
+    if (y) {
+        return z;
+    } else {
+        return c;
+    }
+}
+
+fun c (int k, bool y, int q) bool {
+    (int -> bool) z;
+    (int bool int -> bool) r;
+    fun i () (int -> bool) {
+        fun j () (int -> bool) {
+            fun k (int y) bool {
+                if (y > 5) {
+                    return y <= 6;
+                } else {
+                    return y >= 4;
+                }
+            }
+            return k;
+        }
+        return j();
+    }
+    z = i();
+    r = d(q, y);
+    return r(k, z(q), k + 5) == y;
+}
+
+fun main() int {
+    if (c(13, false, 6)) {
+        return 42;
+    }
+    return 15;
+}

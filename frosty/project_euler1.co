@@ -1,0 +1,14 @@
+fun quad (int n) int {
+    return n * (n + 1) / 2;
+}
+
+fun main () int {
+    int max, threes, fives, fifteens;
+
+    max = 1000;
+    threes = (max - 1) / 3;
+    fives = (max - 1) / 5;
+    fifteens = (max - 1) / 15;
+
+    return 3 * quad(threes) + 5 * quad(fives) - 15 * quad(fifteens);
+}
