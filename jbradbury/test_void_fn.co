@@ -1,0 +1,22 @@
+#81
+
+struct node {
+   int val;
+   struct node rest;
+};
+
+fun retVoid(struct node list) void {
+   int sum;
+   sum = 1;
+   while (sum < 50) {
+      sum = sum + 2 * sum;
+   }
+   list.val = sum;
+}
+
+fun main () int {
+   struct node list;
+   list = new node;
+   retVoid(list);
+   return list.val;
+}

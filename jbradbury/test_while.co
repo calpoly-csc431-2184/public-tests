@@ -1,0 +1,10 @@
+#81
+
+fun main () int {
+   int sum;
+   sum = 1;
+   while (sum < 50) {
+      sum = sum + 2 * sum;
+   }
+   return sum;
+}

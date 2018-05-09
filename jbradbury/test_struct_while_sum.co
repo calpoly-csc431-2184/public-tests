@@ -1,0 +1,40 @@
+#80
+
+struct node {
+   int val;
+   struct node rest;
+};
+
+fun createList(int seed, int numIter) struct node {
+   struct node list, tmp, prev;
+   list = new node;
+   list.val = seed;
+   list.rest = null;
+   prev = list;
+   
+   while (numIter > 0) {
+      tmp = new node;
+      tmp.val = prev.val * numIter;
+      tmp.rest = null;
+      prev.rest = tmp;
+      prev = tmp;
+      numIter = numIter - 1;
+   }
+   return list;
+}
+
+fun listSum(struct node list) int {
+   int sum;
+   sum = 0;
+   while (list != null) {
+      sum = sum + list.val;
+      list = list.rest;
+   }
+   return sum;
+}
+
+fun main() int {
+   struct node list;
+   list = createList(5, 3);
+   return listSum(list);
+}
