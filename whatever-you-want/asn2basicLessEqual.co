@@ -1,0 +1,11 @@
+fun main () int {
+    if (7 <= 4)
+    {
+        return 12;
+    }
+    if (4 <= 4)
+    {
+        return 9;
+    }
+    return 10;
+}

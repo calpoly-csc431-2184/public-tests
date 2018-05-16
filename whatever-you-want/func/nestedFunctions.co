@@ -1,0 +1,6 @@
+fun main () int {
+    fun hi () int {
+        return 5;
+    }
+    return 6;
+} 

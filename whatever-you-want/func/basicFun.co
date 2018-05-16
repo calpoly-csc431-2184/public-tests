@@ -1,0 +1,8 @@
+fun main() int {
+    fun hi() int {
+        int x;
+        x = 5;
+        return x;
+    }
+    return hi();
+}

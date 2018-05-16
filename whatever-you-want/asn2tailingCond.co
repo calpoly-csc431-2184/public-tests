@@ -1,0 +1,14 @@
+fun main () int {
+    int x, y;
+    if (6 < 7)
+    {
+        x = 2;
+        y = 1;
+    }
+    else
+    {
+        x = 7;
+        y = 3;
+    }
+    return x + y;
+}

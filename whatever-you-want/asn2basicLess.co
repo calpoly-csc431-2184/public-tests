@@ -1,0 +1,7 @@
+fun main () int {
+    if (6 < 7)
+    {
+        return 12;
+    }
+    return 10
+}

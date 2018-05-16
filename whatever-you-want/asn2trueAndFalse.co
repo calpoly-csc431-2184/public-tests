@@ -1,0 +1,17 @@
+fun main () int {
+    bool x, y;
+    x = false;
+    y = true;
+    if (x)
+    {
+        return 7;
+    }
+    if (y)
+    {
+        return 8;
+    }
+    else
+    {
+        return 9;
+    }
+}

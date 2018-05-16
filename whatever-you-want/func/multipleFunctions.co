@@ -1,0 +1,21 @@
+fun a() int {
+  return b();
+}
+fun b() int {
+  return 2;
+}
+fun c() int {
+  return 3;
+}
+fun main() int {
+  int x, y, z;
+  fun a() int {
+    int x;
+    x = b();
+    return x + 4;
+  }
+  x = a();
+  y = b();
+  z = c();
+  return x + (y + z);
+}

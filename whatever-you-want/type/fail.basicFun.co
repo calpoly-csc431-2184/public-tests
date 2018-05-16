@@ -1,0 +1,11 @@
+fun main() int {
+    int x;
+    fun hi() bool {
+        bool x;
+        x = false;
+        return x;
+    }
+    x = hi();
+    x = 5;
+    return x;
+}
