@@ -1,0 +1,30 @@
+struct LinkedList {
+  int value;
+  struct LinkedList next;
+};
+
+fun PrependList(int value, struct LinkedList list) struct LinkedList {
+  struct LinkedList newNode;
+  newNode = new LinkedList;
+  newNode.value = value;
+  newNode.next = list;
+  return newNode;
+}
+
+fun SumList(struct LinkedList list) int {
+  if (list == null) {
+    return 0;
+  }
+  return list.value + SumList(list.next);
+}
+
+fun main() int {
+  struct LinkedList list;
+  list = null;
+
+  list = PrependList(1, list);
+  list = PrependList(2, list);
+  list = PrependList(3, list);
+
+  return SumList(list);
+}

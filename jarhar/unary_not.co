@@ -1,0 +1,9 @@
+fun main() int {
+  bool asdf;
+  asdf = false;
+  if (!asdf) {
+    return 1;
+  } else {
+    return 0;
+  }
+}

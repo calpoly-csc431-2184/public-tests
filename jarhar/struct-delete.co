@@ -1,0 +1,13 @@
+struct MyStruct {
+  int value;
+};
+
+fun main() int {
+  int value;
+  struct MyStruct instance;
+  instance = new MyStruct;
+  instance.value = 4;
+  value = instance.value;
+  delete instance;
+  return value;
+}
