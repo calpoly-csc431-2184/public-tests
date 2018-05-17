@@ -1,0 +1,25 @@
+fun f (int x) int {
+  return x + 2;
+}
+
+fun main () int {
+  int x, y, z;
+  bool a, b, c;
+  x = 44;
+  b = x <= 9;
+  if (b) {
+    x = x - 1;
+  } else {
+    y = x + 9;
+    if (b || y > 2) {
+      x = f(x);
+      y = 22;
+    }
+    y = 3+4;
+  }
+  z = 124;
+  if (z > x) {
+    return x;
+  }
+  return z;
+}

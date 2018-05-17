@@ -1,0 +1,30 @@
+struct MyStruct {
+  int value;
+  struct MyStruct next;
+};
+
+fun main() int {
+  struct MyStruct a, b, c, d;
+  int sum;
+  a = new MyStruct;
+  b = new MyStruct;
+  c = new MyStruct;
+  d = new MyStruct;
+  a.next = b;
+  b.next = c;
+  c.next = d;
+  d.next = null;
+
+  a.value = 1;
+  a.next.value = 2;
+  a.next.next.value = 3;
+  a.next.next.next.value = 4;
+
+  sum = 0;
+  sum = sum + a.value;
+  sum = sum + a.next.value;
+  sum = sum + a.next.next.value;
+  sum = sum + a.next.next.next.value;
+
+  return sum;
+}

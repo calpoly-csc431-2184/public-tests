@@ -1,0 +1,12 @@
+fun main() int {
+  int i, asdf;
+  i = 0;
+  asdf = 1;
+  while (i < 10) {
+    if (i < 5) {
+      asdf = asdf * 2;
+    }
+    i = i + 1;
+  }
+  return asdf;
+}

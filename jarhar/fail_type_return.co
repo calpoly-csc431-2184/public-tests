@@ -1,0 +1,10 @@
+fun return_bool() bool {
+  return 1;
+}
+
+fun main() int {
+  if (return_bool()) {
+    return 1;
+  }
+  return 0;
+}

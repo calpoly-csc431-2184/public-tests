@@ -1,0 +1,10 @@
+struct MyStruct{
+  int value;
+};
+
+fun main() int {
+  struct MyStruct instance;
+  instance = new MyStruct;
+  instance.value = 4;
+  return instance.value;
+}
