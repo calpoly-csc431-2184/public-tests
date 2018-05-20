@@ -1,0 +1,7 @@
+fun main() int {
+    int x;
+    x = read;
+    x = read;
+    x = read;
+    return x;
+}
