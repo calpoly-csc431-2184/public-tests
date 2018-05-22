@@ -1,0 +1,19 @@
+fun d (bool y) (int -> bool) {
+    fun z (int y) bool {
+		return true;
+    }
+    fun c (int y) bool {
+    		return true;
+    }
+    if (y) {
+        return z;
+    } else {
+        return c;
+    }
+}
+
+fun main() int {
+	(int -> bool) a;
+	a = d(false);
+    return 15;
+}
