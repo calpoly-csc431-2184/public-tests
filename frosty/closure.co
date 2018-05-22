@@ -1,0 +1,26 @@
+fun f1() (int bool -> int) {
+    int x;
+    fun f2(int x) int {
+        x = 2;
+        if (f3(7, true) == 4) {
+            return x + 1;
+        }
+        return x;
+    }
+    fun f3(int x, bool a) int {
+        fun f4() int {
+            return f2(x);
+        }
+        if (a) {
+            return 4;
+        }
+        return f4();
+    }
+    return f3;
+}
+
+fun main() int {
+    (int bool -> int) f;
+    f = f1();
+    return f(5, false);
+}
