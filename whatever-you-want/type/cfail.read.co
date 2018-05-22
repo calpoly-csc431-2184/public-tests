@@ -1,0 +1,7 @@
+fun main() int {
+   int x;
+   bool b;
+   x = 7;
+   b = read;
+   return x;
+}

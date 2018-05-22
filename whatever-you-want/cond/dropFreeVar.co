@@ -1,0 +1,13 @@
+fun main() int {
+    int x, y, z;
+    x = 12;
+    if (true) {
+       y = 6;
+       z = x;
+    }
+    else {
+       y = x;
+       z = 6;
+    }
+    return z;
+}

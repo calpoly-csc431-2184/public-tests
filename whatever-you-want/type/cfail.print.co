@@ -1,0 +1,8 @@
+fun main() int {
+   int x;
+   bool b;
+   x = 7;
+   b = false;
+   print b endl;
+   return x;
+}

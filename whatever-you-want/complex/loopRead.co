@@ -1,0 +1,12 @@
+fun main() int {
+   int n, i, tmp, sum;
+   n = read;
+   i = 0;
+   sum = 0;
+   while (i < n) {
+      tmp = read;
+      sum = sum + tmp;
+      i = i + 1;
+   }
+   return sum;
+}
