@@ -1,0 +1,11 @@
+fun main() int {
+    (-> int) x;
+    fun a() (-> int) {
+        fun b() int {
+            return 1;
+        }
+        return b;
+    }
+    x = a();
+    return x();
+}
