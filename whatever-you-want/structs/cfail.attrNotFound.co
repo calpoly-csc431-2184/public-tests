@@ -1,0 +1,10 @@
+struct cons {
+   int i;
+   struct cons next;
+};
+
+fun main() int {
+  struct cons x;
+  x = new cons;
+  return x.id;
+}

@@ -1,0 +1,15 @@
+struct cons {
+   int i;
+   struct cons next;
+};
+
+fun main() int
+{
+    struct cons node;
+    node = new cons;
+    node.i = 7;
+    node.next = null;
+    print node.i endl;
+    delete node;
+    return 14;
+}

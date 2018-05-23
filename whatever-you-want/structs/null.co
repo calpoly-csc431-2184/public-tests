@@ -1,0 +1,11 @@
+struct cons {
+   int i;
+   struct cons next;
+};
+
+fun main() int
+{
+    struct cons node;
+    node = null;
+    return 14;
+}
