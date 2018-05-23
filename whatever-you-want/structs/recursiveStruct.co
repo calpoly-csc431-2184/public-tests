@@ -1,0 +1,47 @@
+struct cons {
+   int i;
+   struct cons next;
+};
+
+fun constructNode(int i) struct cons {
+    struct cons n;
+    n = new cons;
+    n.i = i;
+    n.next = null;
+    return n;
+}
+
+fun printList(struct cons c) bool {
+    if (c == null)
+    {
+        return false;
+    }
+    else
+    {
+        print c.i;
+        return printList(c.next);
+    }
+}
+
+fun main() int
+{
+    struct cons node;
+    bool tmp;
+    node = constructNode(8);
+    node.next = constructNode(9);
+    node.next.next = constructNode(10);
+    node.next.next.next = constructNode(11);
+    tmp = printList(node);
+    tmp = freeNodes(node);
+    return 0;
+}
+
+fun freeNodes(struct cons n) bool {
+    bool tmp;
+    if (n != null)
+    {
+        tmp = freeNodes(n.next);
+        delete n;
+    }
+    return false;
+}

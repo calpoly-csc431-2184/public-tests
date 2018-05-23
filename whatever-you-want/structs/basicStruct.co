@@ -1,0 +1,12 @@
+struct cons {
+   int i;
+   struct node cons;
+};
+
+fun main() int
+{
+    struct cons node;
+    node = new cons;
+    node.i = 8;
+    return 8;
+}

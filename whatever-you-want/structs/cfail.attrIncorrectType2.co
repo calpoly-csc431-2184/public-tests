@@ -1,0 +1,11 @@
+struct cons {
+   bool b;
+   struct cons next;
+};
+
+fun main() int {
+  struct cons x;
+  x = new cons;
+  x.b = true;
+  return x.b;
+}
