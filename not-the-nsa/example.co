@@ -1,0 +1,14 @@
+fun main () int {
+   int x, y, z;
+   fun g() int {
+      return 4;
+   }
+   x = 3;
+   if (x < g()) {
+      x = x + 1;
+   } else {
+      x = x - 1;
+   }
+   y = 4;
+   return x + y;
+}

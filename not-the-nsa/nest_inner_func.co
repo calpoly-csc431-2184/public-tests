@@ -6,6 +6,9 @@ fun main() int {
          }
          return z();
       }
+      fun z() int {
+         return 1;
+      }
       return y();
    }
    return x();

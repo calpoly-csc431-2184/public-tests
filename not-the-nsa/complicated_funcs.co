@@ -1,0 +1,34 @@
+fun main() int { 
+	int x;	
+	fun f() int {
+		int y;
+		fun g() int {
+			return 9;
+		}
+		y = h();
+		return g();
+	}
+	fun z () int {
+		return 7;
+	}	
+	fun y () int {
+		return main();
+	}	
+	fun h () int {
+		int y;
+		int w;
+		
+		fun i() int {
+			w = 1;
+			return 1;
+		}
+		return i();
+	}
+	
+   x = 0;
+	return woohoo(x);
+}
+
+fun woohoo(int p) int {
+	return p + 1;
+}
