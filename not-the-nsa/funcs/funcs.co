@@ -1,0 +1,7 @@
+fun main() int {
+   return a();
+}
+
+fun a() int {
+   return 23;
+}

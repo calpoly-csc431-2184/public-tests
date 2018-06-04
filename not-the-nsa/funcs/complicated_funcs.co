@@ -19,7 +19,6 @@ fun main() int {
 		int w;
 		
 		fun i() int {
-			w = 1;
 			return 1;
 		}
 		return i();

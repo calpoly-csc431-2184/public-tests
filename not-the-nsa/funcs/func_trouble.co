@@ -1,0 +1,9 @@
+fun main() int {
+	fun h () int {
+		fun i() int {
+			return 12;
+		}
+		return i();
+	}
+   return h();
+}

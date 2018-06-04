@@ -1,5 +1,5 @@
 fun main() int {
-   return f(1);
+   return f(7);
 }
 
 fun f(int x) int {
@@ -7,5 +7,5 @@ fun f(int x) int {
 }
 
 fun g(int x, bool y) int {
-   return 3;
+   return x;
 }

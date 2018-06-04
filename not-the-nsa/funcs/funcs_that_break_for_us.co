@@ -1,0 +1,13 @@
+fun b() int {
+  return 2;
+}
+fun main() int {
+  int x;
+  fun a() int {
+    int x;
+    x = b();
+    return x + 4;
+  }
+  x = a();
+  return x + 1;
+}
