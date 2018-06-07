@@ -1,5 +1,5 @@
 fun f() int {
-   return 1;
+   return 143;
 }
 
 fun main() int {

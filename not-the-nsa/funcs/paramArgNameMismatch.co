@@ -4,6 +4,6 @@ fun f(int j, int p) int {
 
 fun main() int {
    int k;
-   k = 5;
+   k = 4;
    return f(6,k);
 }

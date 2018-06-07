@@ -1,18 +1,6 @@
 fun main() int {
    fun g() int {
-      return 1;
+      return 21;
    }
    return g();
 }
-
-// current IR below
-(LetRecC 1 #f (list
-               (LetBinding 'main (LetRecC 2 #f (list
-                                                (LetBinding 'K1 (LamC 3 #f '(g) (LetC 4 #f '() (CallC 5 #f '() (VarC 6 #f 'g))))) 
-                                                (LetBinding 'g (LetRecC 7 #f (list
-                                                                              (LetBinding 'K1 (LamC 8 #f '() (LetC 9 #f '() (NumC 10 'int 1)))))
-                                                                        (LamC 11 #f '() (CallC 12 #f '() (VarC 13 #f 'K1))))))
-                                          (LamC 14 #f '() (CallC 15 #f '() (VarC 16 #f 'K1)))))) 
-         (LetRecC 17 #f (list (LetBinding 'temp18 (VarC 18 #f 'main))) (CallC #f #f '() (VarC #f #f 'temp18))))
-
-// desired IR below
