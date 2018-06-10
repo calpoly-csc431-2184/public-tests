@@ -1,0 +1,11 @@
+struct node {
+   bool state;
+   struct node next;
+};
+
+fun main() int {
+   struct node head;
+   head = new node;
+   head.state = true;
+   return head.state;
+}

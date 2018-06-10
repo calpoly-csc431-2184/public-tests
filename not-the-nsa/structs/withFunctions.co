@@ -1,0 +1,18 @@
+struct node {
+   int data;
+   struct node next;
+};
+
+fun main() int {
+   struct node head;
+   head = new node;
+   head = setData(head, 10);
+   print head.data endl;
+   delete head;
+   return 2;
+}
+
+fun setData(struct node head, int newData) struct node {
+   head.data = newData;
+   return head;
+}

@@ -1,0 +1,11 @@
+struct node {
+   int data;
+   struct node next;
+};
+
+fun main() int {
+   struct node head;
+   head = new node;
+   head.data = 8;
+   return head.data;
+}
