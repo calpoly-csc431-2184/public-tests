@@ -1,0 +1,8 @@
+fun main() int {
+   fun x() int {
+      int y;
+      y = 6;
+      return y;
+   }
+   return x();
+}

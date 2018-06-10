@@ -1,0 +1,4 @@
+fun main() int {
+   print 7 endl;
+   return 8;
+}
